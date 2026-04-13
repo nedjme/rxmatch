@@ -1,0 +1,335 @@
+{
+  "app": {
+    "name": "RxMatch",
+    "tagline": "Lecture intelligente d'ordonnances"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "saving": "Enregistrement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "close": "Fermer",
+    "add": "Ajouter",
+    "import": "Importer",
+    "export": "Télécharger",
+    "invite": "Inviter",
+    "upload": "Téléverser",
+    "validate": "Valider",
+    "error": "Une erreur est survenue",
+    "or": "ou",
+    "actions": "Actions",
+    "noResults": "Aucun résultat",
+    "required": "Requis"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "prescriptions": "Ordonnances",
+    "catalogue": "Catalogue",
+    "settings": "Paramètres",
+    "journal": "Journal",
+    "logout": "Déconnexion"
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "subtitle": "Connectez-vous à votre espace RxMatch",
+      "email": "Adresse e-mail",
+      "emailPlaceholder": "vous@exemple.fr",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "submitting": "Connexion en cours...",
+      "noAccount": "Pas encore de compte ?",
+      "signupLink": "Créer un compte",
+      "errors": {
+        "invalidCredentials": "Email ou mot de passe incorrect.",
+        "unknown": "Une erreur est survenue. Veuillez réessayer."
+      }
+    },
+    "signup": {
+      "title": "Créer un compte",
+      "subtitle": "Créez votre compte et votre organisation",
+      "accountSection": "Informations personnelles",
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Dr. Marie Dupont",
+      "email": "Adresse e-mail",
+      "emailPlaceholder": "marie@pharmacie.fr",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "Minimum 8 caractères",
+      "passwordConfirm": "Confirmer le mot de passe",
+      "passwordConfirmPlaceholder": "Répétez le mot de passe",
+      "orgSection": "Votre organisation",
+      "orgName": "Nom de l'organisation",
+      "orgNamePlaceholder": "Pharmacie Centrale",
+      "orgSlug": "Identifiant unique",
+      "orgSlugHint": "Utilisé dans les URLs. Lettres minuscules, chiffres et tirets uniquement.",
+      "submit": "Créer mon compte",
+      "submitting": "Création en cours...",
+      "hasAccount": "Déjà un compte ?",
+      "loginLink": "Se connecter",
+      "checkEmail": "Vérifiez votre boîte mail pour confirmer votre adresse e-mail.",
+      "errors": {
+        "passwordMismatch": "Les mots de passe ne correspondent pas.",
+        "passwordTooShort": "Le mot de passe doit contenir au moins 8 caractères.",
+        "slugTaken": "Cet identifiant est déjà utilisé. Essayez un autre.",
+        "emailTaken": "Cette adresse e-mail est déjà associée à un compte.",
+        "invalidSlug": "L'identifiant ne peut contenir que des lettres minuscules, des chiffres et des tirets.",
+        "unknown": "Une erreur est survenue. Veuillez réessayer."
+      }
+    },
+    "invite": {
+      "title": "Rejoindre l'organisation",
+      "subtitleWithOrg": "Vous avez été invité à rejoindre {orgName}",
+      "subtitleGeneric": "Complétez votre inscription pour rejoindre l'équipe",
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Votre nom complet",
+      "password": "Choisissez un mot de passe",
+      "passwordPlaceholder": "Minimum 8 caractères",
+      "passwordConfirm": "Confirmer le mot de passe",
+      "submit": "Accepter l'invitation",
+      "submitting": "Activation en cours...",
+      "roleLabel": "Rôle attribué",
+      "invalid": {
+        "title": "Invitation invalide",
+        "description": "Ce lien d'invitation a expiré ou est invalide. Contactez votre administrateur pour obtenir un nouveau lien."
+      },
+      "success": {
+        "title": "Bienvenue dans l'équipe !",
+        "description": "Votre compte a été activé. Vous allez être redirigé vers le tableau de bord."
+      },
+      "errors": {
+        "passwordMismatch": "Les mots de passe ne correspondent pas.",
+        "passwordTooShort": "Le mot de passe doit contenir au moins 8 caractères.",
+        "unknown": "Une erreur est survenue. Veuillez réessayer."
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "stats": {
+      "prescriptionsThisMonth": "Ordonnances ce mois-ci",
+      "averageConfidence": "Taux de confiance moyen",
+      "correctionRate": "Taux de correction ce mois",
+      "scansRemaining": "Scans restants ce mois"
+    },
+    "recentPrescriptions": "Ordonnances récentes",
+    "newPrescription": "Nouvelle ordonnance",
+    "viewAll": "Voir tout",
+    "onboarding": {
+      "title": "Démarrer avec RxMatch",
+      "orgCreated": "Organisation créée",
+      "catalogueImported": "Catalogue importé",
+      "firstPrescription": "Première ordonnance traitée"
+    }
+  },
+  "prescriptions": {
+    "title": "Ordonnances",
+    "new": "Nouvelle ordonnance",
+    "status": {
+      "en_attente": "En attente",
+      "en_cours": "En cours de révision",
+      "validee": "Validée"
+    },
+    "columns": {
+      "date": "Date",
+      "patient": "Patient",
+      "status": "Statut",
+      "items": "Articles",
+      "confidence": "Confiance"
+    },
+    "empty": "Aucune ordonnance pour le moment",
+    "upload": {
+      "title": "Déposer l'ordonnance",
+      "hint": "Glissez-déposez une image ou cliquez pour sélectionner",
+      "formats": "JPG, PNG, WebP ou PDF — max 10 Mo",
+      "processing": "Lecture de l'ordonnance en cours...",
+      "lowLegibility": "Lisibilité faible — vérifiez chaque suggestion attentivement"
+    },
+    "review": {
+      "legibility": {
+        "good": "Bonne lisibilité",
+        "partial": "Lisibilité partielle",
+        "poor": "Mauvaise lisibilité"
+      },
+      "language": {
+        "fr": "Français",
+        "ar": "Arabe",
+        "en": "Anglais",
+        "other": "Autre"
+      },
+      "manualSearch": "Recherche manuelle...",
+      "operatorNote": "Note opérateur",
+      "addNote": "Ajouter une note",
+      "progress": "{confirmed} / {total} articles confirmés",
+      "validateButton": "Valider l'ordonnance",
+      "keyboardHints": "Entrée pour confirmer · Tab pour suivant · O pour rechercher",
+      "confirmedTimes": "Confirmé {count} fois",
+      "successToast": "Ordonnance validée avec succès"
+    },
+    "confidence": {
+      "high": "Haute confiance",
+      "medium": "Confiance moyenne",
+      "low": "Faible confiance"
+    }
+  },
+  "catalogue": {
+    "title": "Catalogue",
+    "import": "Importer un catalogue",
+    "export": "Télécharger le catalogue",
+    "search": "Rechercher un article...",
+    "empty": "Le catalogue est vide — importez votre premier fichier",
+    "types": {
+      "medicament": "Médicament",
+      "analyse": "Analyse"
+    },
+    "columns": {
+      "name": "Nom",
+      "code": "Code",
+      "type": "Type",
+      "synonyms": "Synonymes",
+      "actions": "Actions"
+    },
+    "lastImport": "Dernier import",
+    "toasts": {
+      "imported": "Catalogue importé — {added} articles ajoutés",
+      "itemUpdated": "Article mis à jour",
+      "itemDeleted": "Article supprimé"
+    },
+    "import_wizard": {
+      "title": "Importer un catalogue",
+      "step1": "Fichier",
+      "step2": "Correspondance des colonnes",
+      "step3": "Mode d'import et confirmation",
+      "dropzone": "Glissez-déposez votre fichier CSV ou Excel ici",
+      "dropzoneHint": "ou cliquez pour sélectionner (.csv, .xlsx)",
+      "preview": "Aperçu — {count} lignes détectées",
+      "columnMapping": {
+        "name": "Nom",
+        "code": "Code",
+        "synonyms": "Synonymes",
+        "type": "Type",
+        "nameRequired": "(requis)",
+        "optional": "(optionnel)",
+        "synonymsHint": "Valeurs séparées par des virgules dans la cellule",
+        "noColumn": "— Aucune colonne —",
+        "defaultType": "Si la colonne Type n'est pas mappée, tous les articles seront :",
+        "typeChoice": {
+          "medicament": "Médicaments",
+          "analyse": "Analyses",
+          "mixed": "Les deux (colonne mappée ci-dessus)"
+        }
+      },
+      "modes": {
+        "add": "Ajouter uniquement les nouveaux articles",
+        "upsert": "Mettre à jour les existants et ajouter les nouveaux",
+        "replace": "Remplacer tout le catalogue",
+        "replaceWarning": "Cette action supprimera tous les articles existants avant l'import."
+      },
+      "summary": {
+        "toAdd": "à ajouter",
+        "toUpdate": "à mettre à jour",
+        "toSkip": "ignorés"
+      },
+      "confirm": "Lancer l'import"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "tabs": {
+      "organisation": "Organisation",
+      "members": "Membres",
+      "webhooks": "Webhooks",
+      "usage": "Utilisation"
+    },
+    "organisation": {
+      "name": "Nom de l'organisation",
+      "confidenceThreshold": "Seuil de confiance",
+      "confidenceThresholdHint": "Les suggestions dont le score est inférieur à ce seuil seront signalées pour révision manuelle.",
+      "saveSuccess": "Modifications enregistrées"
+    },
+    "members": {
+      "title": "Membres",
+      "invite": "Inviter un membre",
+      "inviteEmail": "Adresse e-mail",
+      "inviteRole": "Rôle",
+      "inviteSuccess": "Membre invité avec succès",
+      "roles": {
+        "admin": "Administrateur",
+        "pharmacist": "Pharmacien",
+        "lab_tech": "Technicien de laboratoire",
+        "readonly": "Lecture seule"
+      },
+      "columns": {
+        "name": "Nom",
+        "email": "Email",
+        "role": "Rôle",
+        "joinedAt": "Membre depuis",
+        "actions": "Actions"
+      },
+      "removeConfirm": "Êtes-vous sûr de vouloir retirer ce membre ?",
+      "removeSuccess": "Membre retiré",
+      "roleChanged": "Rôle mis à jour"
+    },
+    "webhooks": {
+      "title": "Webhooks",
+      "url": "URL du webhook",
+      "urlPlaceholder": "https://votre-systeme.fr/webhook",
+      "hint": "RxMatch enverra une requête POST à cette URL à chaque ordonnance validée.",
+      "saveSuccess": "URL du webhook enregistrée"
+    },
+    "usage": {
+      "title": "Utilisation",
+      "currentMonth": "Ce mois-ci",
+      "scans": "scans",
+      "history": "Historique (12 derniers mois)",
+      "month": "Mois",
+      "count": "Nombre de scans"
+    }
+  },
+  "journal": {
+    "title": "Journal d'activité",
+    "filterByAction": "Filtrer par action",
+    "filterByUser": "Filtrer par utilisateur",
+    "allActions": "Toutes les actions",
+    "allUsers": "Tous les utilisateurs",
+    "columns": {
+      "date": "Date",
+      "user": "Utilisateur",
+      "action": "Action",
+      "entity": "Entité"
+    },
+    "actions": {
+      "prescription": {
+        "uploaded": "Ordonnance téléversée",
+        "committed": "Ordonnance validée"
+      },
+      "prescription_item": {
+        "confirmed": "Article confirmé",
+        "overridden": "Article corrigé"
+      },
+      "catalogue": {
+        "imported": "Catalogue importé"
+      },
+      "catalogue_item": {
+        "created": "Article ajouté",
+        "updated": "Article modifié",
+        "deleted": "Article supprimé"
+      },
+      "member": {
+        "invited": "Membre invité",
+        "role_changed": "Rôle modifié",
+        "removed": "Membre retiré"
+      },
+      "org": {
+        "settings_updated": "Paramètres mis à jour"
+      }
+    },
+    "empty": "Aucune activité enregistrée"
+  }
+}
