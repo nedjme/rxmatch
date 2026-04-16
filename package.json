@@ -2,34 +2,40 @@
   "name": "rx-match",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "migrate": "supabase db push --linked"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.33.0",
-    "@supabase/ssr": "^0.5.2",
+    "@google/generative-ai": "^0.24.1",
     "@supabase/supabase-js": "^2.45.6",
+    "@tauri-apps/api": "^2.1.1",
+    "@tauri-apps/plugin-dialog": "^2.0.1",
+    "@tauri-apps/plugin-fs": "^2.1.0",
+    "@tauri-apps/plugin-http": "^2.0.4",
+    "@tauri-apps/plugin-shell": "^2.0.2",
     "@types/papaparse": "^5.5.2",
-    "next": "^16.2.3",
-    "next-intl": "^4.9.1",
     "papaparse": "^5.5.3",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-router-dom": "^6.28.0",
     "sonner": "^1.5.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.29",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vite": "^6.0.3"
   }
 }

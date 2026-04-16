@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Default capabilities for RxMatch desktop app","local":true,"windows":["main"],"permissions":["core:default","fs:default","fs:allow-read-text-file","fs:allow-write-file","fs:allow-mkdir","fs:allow-read-dir","dialog:default","dialog:allow-open","dialog:allow-save","http:default","http:allow-fetch","shell:default"]}}
